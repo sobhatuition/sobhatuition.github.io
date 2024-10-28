@@ -1,0 +1,248 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* Tab Navigation Styling */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li.active {
+    background-color: #555;
+}
+
+nav ul li:hover {
+    background-color: #555;
+    transform: scale(1.05);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Tab Content Styling */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #292929;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Flexbox Layouts */
+.content-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-text,
+.services-list {
+    flex: 1;
+    min-width: 250px; /* Ensures elements don't become too narrow on small screens */
+}
+
+.about-image,
+.services-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* About and Services images */
+.about-image img,
+.services-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Scheduler Form Styling */
+form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+form label,
+form input,
+form select,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input,
+form select {
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* Video Section Styling */
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive layout for tablets and larger screens */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .content-flex {
+        flex-direction: row;
+    }
+
+    .about-image img,
+    .services-image img {
+        max-width: 80%;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile-optimized layout for small screens (phones) */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .content-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text,
+    .services-list,
+    .about-image,
+    .services-image {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form label,
+    form input,
+    form select,
+    form button {
+        margin-bottom: 15px;
+    }
+
+    form button {
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

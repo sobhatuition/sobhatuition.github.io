@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobha Tuitions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Sobha Tuitions</h1>
+        <p>Expert Coaching for CBSE & ICSE Students (Class 6-12)</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav>
+        <ul class="tabs">
+            <li class="tab-link active" data-tab="about">About</li>
+            <li class="tab-link" data-tab="services">Services</li>
+            <li class="tab-link" data-tab="demo">Demo Video</li>
+            <li class="tab-link" data-tab="scheduler">Schedule a Demo</li>
+            <li class="tab-link" data-tab="contact">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="tab-content active">
+            <h2>About Sobha Tuitions</h2>
+            <div class="content-flex">
+                <div class="about-text">
+                    <p>With over 12 years of teaching experience, Sobha Tuitions offers specialized guidance in Maths and Computer Science. Our one-to-one and group sessions help students excel in CBSE and ICSE curriculums from Class 6 to 12.</p>
+                    <p>Specializing in BlueJ and Python for higher classes, we ensure that every student gets personal attention to maximize their learning potential.</p>
+                </div>
+                <div class="about-image">
+                    <img src="sobha.png" width="1200" height="800" alt="Teacher Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="tab-content">
+            <h2>Our Services</h2>
+            <div class="content-flex">
+                <ul class="services-list">
+                    <li>One-on-One Tuitions</li>
+                    <li>Group Sessions</li>
+                    <li>Online Classes via Zoom</li>
+                    <li>Subject Specialization: Maths & Computer Science</li>
+                    <li>BlueJ and Python Coaching for High School</li>
+                </ul>
+                <div class="services-image">
+                    <img src="https://myviewboard.com/blog/wp-content/uploads/2022/01/MP0055-01.png" width="1000" height="800" alt="Classroom Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Video Section -->
+        <section id="demo" class="tab-content">
+            <h2>Watch a Demo Video</h2>
+            <video controls>
+                <source src="https://example.com/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Schedule Demo Class Section -->
+        <section id="scheduler" class="tab-content">
+            <h2>Schedule a Demo Class</h2>
+            <form id="demo-scheduler">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="class">Class of Interest:</label>
+                <select id="class">
+                    <option value="Class 6">Class 6</option>
+                    <option value="Class 7">Class 7</option>
+                    <option value="Class 8">Class 8</option>
+                    <option value="Class 9">Class 9</option>
+                    <option value="Class 10">Class 10</option>
+                    <option value="Class 11">Class 11</option>
+                    <option value="Class 12">Class 12</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Schedule Demo</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="tab-content">
+            <h2>Contact Us</h2>
+            <p>If you're interested in our tuition services, feel free to reach out via WhatsApp or email.</p>
+            <ul>
+                <li><strong>Phone:</strong> <a href="tel:8197879418">8197879418</a></li>
+                <li><strong>Email:</strong> <a href="mailto:sobhatuition@gmail.com">sobhatuition@gmail.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sobha Tuitions. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
